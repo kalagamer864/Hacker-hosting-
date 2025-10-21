@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"/><title>Dashboard — The Hacker Hosting</title><meta name="viewport" content="width=device-width,initial-scale=1" /><link rel="stylesheet" href="assets/css/style.css" /></head>
+<body class="theme">
+  <header class="nav"><div class="brand"><img src="assets/logo.png" class="logo"/><h1>The Hacker Hosting</h1></div><nav><a href="index.html">Home</a><a href="plans.html">Plans</a><a href="signup.html">Signup</a></nav></header>
+
+  <main class="dashboard">
+    <aside class="sidebar card">
+      <h3>Your Servers</h3>
+      <div id="serverList">No servers yet.</div>
+      <button id="createBtn" class="btn primary">Create New Server</button>
+    </aside>
+
+    <section class="panel card">
+      <h2 id="serverTitle">Select a server</h2>
+      <div id="console" class="console">Console output will appear here (mock).</div>
+      <div class="controls">
+        <button onclick="serverAction('start')">Start</button>
+        <button onclick="serverAction('stop')">Stop</button>
+        <button onclick="serverAction('restart')">Restart</button>
+      </div>
+      <h3>File Manager (mock)</h3>
+      <p>Upload, download, and edit config files from here (UI only).</p>
+    </section>
+  </main>
+
+  <footer class="footer"><p>© The Hacker Hosting</p></footer>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
